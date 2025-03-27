@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="right_mecanum wheel">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -0.0127 -6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.414712198540076" />
+      <inertia
+        ixx="0.00062309470872441"
+        ixy="4.17225376570466E-17"
+        ixz="2.27267873828223E-19"
+        iyy="0.00120434462423014"
+        iyz="4.53707579337119E-17"
+        izz="0.000623094709119957" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RR1">
+    <inertial>
+      <origin
+        xyz="-6.9389E-18 3.0531E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="8.4703E-22"
+        ixz="-1.2704E-22"
+        iyy="1.2724E-06"
+        iyz="-1.6829E-20"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR1_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0127 0.0889"
+      rpy="0 0 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR2">
+    <inertial>
+      <origin
+        xyz="0 3.05311331771918E-16 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970929E-06"
+        ixy="5.29395592033938E-23"
+        ixz="-8.84323377551545E-22"
+        iyy="1.27238493435794E-06"
+        iyz="-1.36013766739254E-20"
+        izz="8.01298624970929E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR2_joint"
+    type="continuous">
+    <origin
+      xyz="0.038572 -0.0127 0.080096"
+      rpy="0.32821 0.31183 0.83745" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR2" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR3">
+    <inertial>
+      <origin
+        xyz="2.08166817117217E-17 -0.00317499999999993 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624971076E-06"
+        ixy="-6.35274710440725E-22"
+        ixz="8.25342058235569E-22"
+        iyy="1.27238493436077E-06"
+        iyz="7.44726957302664E-21"
+        izz="8.01298624971076E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR3_joint"
+    type="continuous">
+    <origin
+      xyz="0.068105 -0.010455 0.057184"
+      rpy="0.72541 0.58577 1.0133" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR3" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR4">
+    <inertial>
+      <origin
+        xyz="0 8.32667268468867E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624971077E-06"
+        ixy="7.41153828847513E-22"
+        ixz="-3.19214095755756E-22"
+        iyy="1.27238493436168E-06"
+        iyz="-1.71629591511681E-20"
+        izz="8.01298624971077E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR4_joint"
+    type="continuous">
+    <origin
+      xyz="0.0866710913929642 -0.0127 0.019782111028716"
+      rpy="1.25856910663362 0.760630252375355 1.35184274422249" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR5">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 2.77555756156289E-16 -1.30104260698261E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970884E-06"
+        ixy="6.88214269644119E-22"
+        ixz="-4.16049003974305E-22"
+        iyy="1.27238493435692E-06"
+        iyz="4.18203508324199E-22"
+        izz="8.01298624970884E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR5_joint"
+    type="continuous">
+    <origin
+      xyz="0.086671 -0.0127 -0.019782"
+      rpy="1.883 0.76063 1.7897" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR5" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR6">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 9.0206E-17 -6.0715E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-8.9997E-22"
+        ixz="-6.9877E-22"
+        iyy="1.2724E-06"
+        iyz="9.5573E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR6_joint"
+    type="continuous">
+    <origin
+      xyz="0.069505 -0.0127 -0.055428"
+      rpy="2.4162 0.58577 2.1283" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR6" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR7">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 2.91433543964104E-16 8.67361737988404E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624971091E-06"
+        ixy="-1.58818677610181E-22"
+        ixz="3.59873978755508E-22"
+        iyy="1.27238493436106E-06"
+        iyz="-3.01756897575569E-22"
+        izz="8.01298624971091E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR7_joint"
+    type="continuous">
+    <origin
+      xyz="0.038572 -0.0127 -0.080096"
+      rpy="2.8134 0.31183 2.3041" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR7" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR8">
+    <inertial>
+      <origin
+        xyz="4.4409E-16 -3.4694E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-4.7646E-22"
+        ixz="-8.0185E-23"
+        iyy="1.2724E-06"
+        iyz="-3.3259E-20"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR8_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0126999999999999 -0.0889"
+      rpy="-3.14159265358979 0 2.35619449019234" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR8" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR9">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 3.19189119579733E-16 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668682" />
+      <inertia
+        ixx="8.01298624970937E-06"
+        ixy="-3.70576914423756E-22"
+        ixz="4.50389028775613E-22"
+        iyy="1.27238493435809E-06"
+        iyz="-4.63017191477683E-22"
+        izz="8.01298624970937E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR9_joint"
+    type="continuous">
+    <origin
+      xyz="-0.038572 -0.0127 -0.080096"
+      rpy="-2.8134 -0.31183 2.3041" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR9" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR10">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 8.32667268468867E-17 4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624971077E-06"
+        ixy="0"
+        ixz="-2.22983584553412E-22"
+        iyy="1.27238493436077E-06"
+        iyz="-5.14264773883416E-22"
+        izz="8.01298624971077E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR10_joint"
+    type="continuous">
+    <origin
+      xyz="-0.069505 -0.0127 -0.055428"
+      rpy="-2.4162 -0.58577 2.1283" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR10" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR11">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 1.0408E-16 -8.3267E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-1.5882E-22"
+        ixz="9.1633E-23"
+        iyy="1.2724E-06"
+        iyz="-2.1923E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR11_joint"
+    type="continuous">
+    <origin
+      xyz="-0.086671 -0.0127 -0.019782"
+      rpy="-1.883 -0.76063 1.7897" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR11" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR12">
+    <inertial>
+      <origin
+        xyz="0 8.3267E-17 -2.7756E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="4.7646E-22"
+        ixz="-2.0998E-22"
+        iyy="1.2724E-06"
+        iyz="-3.7503E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR12_joint"
+    type="continuous">
+    <origin
+      xyz="-0.086671 -0.0127 0.019782"
+      rpy="-1.2586 -0.76063 1.3518" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR12" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR13">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 4.6491E-16 2.7756E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-1.0588E-22"
+        ixz="3.7257E-22"
+        iyy="1.2724E-06"
+        iyz="-5.4055E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR13_joint"
+    type="continuous">
+    <origin
+      xyz="-0.069505 -0.0127 0.055428"
+      rpy="-0.72541 -0.58577 1.0133" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR13" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RR14">
+    <inertial>
+      <origin
+        xyz="0 2.9143E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-9.5291E-22"
+        ixz="-4.4744E-22"
+        iyy="1.2724E-06"
+        iyz="5.7156E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://right_mecanum wheel/meshes/RR14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR14_joint"
+    type="continuous">
+    <origin
+      xyz="-0.038572 -0.0127 0.080096"
+      rpy="-0.32821 -0.31183 0.83745" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR14" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
