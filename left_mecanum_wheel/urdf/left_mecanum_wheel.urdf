@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="left_mecanum_wheel">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 -0.0127 -2.08166817117217E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.49085057336667" />
+      <inertia
+        ixx="0.000855919788869549"
+        ixy="7.02751486780771E-18"
+        ixz="-1.76242646778707E-13"
+        iyy="0.00166196578431783"
+        iyz="-4.73074206632684E-17"
+        izz="0.000855919788789097" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LR1">
+    <inertial>
+      <origin
+        xyz="0 -3.1919E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-1.2705E-21"
+        ixz="-2.7276E-23"
+        iyy="1.2724E-06"
+        iyz="-1.1012E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR1_joint"
+    type="continuous">
+    <origin
+      xyz="0.075462 -0.0127 -0.060179"
+      rpy="2.4162 0.58577 2.1283" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR2">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -3.3307E-16 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-1.5352E-21"
+        ixz="4.3636E-22"
+        iyy="1.2724E-06"
+        iyz="5.9518E-22"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR2_joint"
+    type="continuous">
+    <origin
+      xyz="0.041878 -0.0127 -0.086962"
+      rpy="2.8134 0.31183 2.3041" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR2" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR3">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 -4.8572E-16 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.021119" />
+      <inertia
+        ixx="8.013E-06"
+        ixy="-5.294E-22"
+        ixz="-5.5257E-22"
+        iyy="1.2724E-06"
+        iyz="-1.4125E-21"
+        izz="8.013E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR3_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0127 -0.09652"
+      rpy="3.1416 0 2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR3" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR4">
+    <inertial>
+      <origin
+        xyz="0 -4.57966997657877E-16 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668682" />
+      <inertia
+        ixx="8.01298624970931E-06"
+        ixy="4.2351647362715E-22"
+        ixz="-8.77131336323982E-23"
+        iyy="1.2723849343581E-06"
+        iyz="-1.19944387690366E-21"
+        izz="8.01298624970931E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.041878 -0.0127 -0.086962"
+      rpy="-2.8134 -0.31183 2.3041" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR5">
+    <inertial>
+      <origin
+        xyz="0 -2.91433543964104E-16 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970889E-06"
+        ixy="-5.29395592033938E-22"
+        ixz="3.55071276526109E-22"
+        iyy="1.27238493435815E-06"
+        iyz="-2.27074809679911E-24"
+        izz="8.01298624970889E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR5_joint"
+    type="continuous">
+    <origin
+      xyz="-0.075462 -0.0127 -0.060179"
+      rpy="-2.4162 -0.58577 2.1283" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR5" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR6">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -2.77555756156289E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970912E-06"
+        ixy="-3.17637355220363E-22"
+        ixz="8.59878238275205E-22"
+        iyy="1.27238493435815E-06"
+        iyz="-3.0479206419946E-22"
+        izz="8.01298624970912E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR6_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0941 -0.0127 -0.021478"
+      rpy="-1.883 -0.76063 1.7897" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR6" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR7">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 -4.85722573273506E-16 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624970969E-06"
+        ixy="-3.70576914423756E-22"
+        ixz="3.9782589158534E-22"
+        iyy="1.27238493435898E-06"
+        iyz="-1.58740757854192E-21"
+        izz="8.01298624970969E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR7_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0941 -0.0127 0.021478"
+      rpy="-1.2586 -0.76063 1.3518" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR7" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR8">
+    <inertial>
+      <origin
+        xyz="4.85722573273506E-16 -7.97972798949331E-16 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668682" />
+      <inertia
+        ixx="8.01298624970942E-06"
+        ixy="4.2351647362715E-22"
+        ixz="3.41400312120472E-23"
+        iyy="1.27238493435842E-06"
+        iyz="-3.36878705845167E-20"
+        izz="8.01298624970942E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR8_joint"
+    type="continuous">
+    <origin
+      xyz="-0.075462 -0.0127 0.060179"
+      rpy="-0.72541 -0.58577 1.0133" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR8" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR9">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 -4.9960036108132E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970774E-06"
+        ixy="-5.29395592033938E-22"
+        ixz="1.86067654771765E-22"
+        iyy="1.27238493435518E-06"
+        iyz="-1.24330044371986E-21"
+        izz="8.01298624970774E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR9_joint"
+    type="continuous">
+    <origin
+      xyz="-0.041878 -0.0127 0.086962"
+      rpy="-0.32821 -0.31183 0.83745" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR9" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR10">
+    <inertial>
+      <origin
+        xyz="0 -4.71844785465692E-16 -4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668682" />
+      <inertia
+        ixx="8.01298624970931E-06"
+        ixy="-7.94093388050907E-22"
+        ixz="2.99471370445973E-22"
+        iyy="1.27238493435809E-06"
+        iyz="9.87685640090089E-22"
+        izz="8.01298624970931E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR10_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0127 0.09652"
+      rpy="0 0 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR10" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR11">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -3.19189119579733E-16 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624970976E-06"
+        ixy="-7.41153828847513E-22"
+        ixz="-1.74324315507828E-22"
+        iyy="1.272384934359E-06"
+        iyz="2.49192158119321E-22"
+        izz="8.01298624970976E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR11_joint"
+    type="continuous">
+    <origin
+      xyz="0.041878 -0.0127 0.086962"
+      rpy="0.32821 0.31183 0.83745" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR11" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR12">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 -3.05311331771918E-16 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668683" />
+      <inertia
+        ixx="8.01298624971091E-06"
+        ixy="8.99972506457694E-22"
+        ixz="2.49192158119322E-22"
+        iyy="1.27238493436106E-06"
+        iyz="-5.52103073001929E-23"
+        izz="8.01298624971091E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR12_joint"
+    type="continuous">
+    <origin
+      xyz="0.075462 -0.0127 0.060179"
+      rpy="0.72541 0.58577 1.0133" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR12" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR13">
+    <inertial>
+      <origin
+        xyz="0 -4.85722573273506E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.01298624970981E-06"
+        ixy="-8.99972506457694E-22"
+        ixz="6.35274710440725E-22"
+        iyy="1.27238493435909E-06"
+        iyz="-7.41153828847513E-22"
+        izz="8.01298624970981E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR13_joint"
+    type="continuous">
+    <origin
+      xyz="0.0941 -0.0127 0.021478"
+      rpy="1.2586 0.76063 1.3518" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR13" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="LR14">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 -4.71844785465692E-16 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211185318668681" />
+      <inertia
+        ixx="8.0129862497077E-06"
+        ixy="-8.99972506457694E-22"
+        ixz="-1.49735685222987E-22"
+        iyy="1.27238493435488E-06"
+        iyz="-9.96768632477285E-22"
+        izz="8.01298624970771E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://left_mecanum_wheel/meshes/LR14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LR14_Joint"
+    type="continuous">
+    <origin
+      xyz="0.0941 -0.0127 -0.021478"
+      rpy="1.883 0.76063 1.7897" />
+    <parent
+      link="base_link" />
+    <child
+      link="LR14" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
